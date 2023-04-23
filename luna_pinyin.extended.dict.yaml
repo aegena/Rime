@@ -1,0 +1,21 @@
+# Rime dictionary
+# encoding: utf-8
+# Luna Pinyin Extended Dictionary(Basic)  - 明月拼音扩充词库（基本）
+
+---
+name: luna_pinyin.extended      # 词库名
+version: "2021.02.07"
+sort: by_weight                 # by_weight（按词频高低排序）或 original（保持原码表中的顺序）
+use_preset_vocabulary: true     # true 或 false，选择是否导入预设词汇表【八股文】
+
+import_tables:
+  - cn_dicts/8105    # 字表
+  - cn_dicts/base    # 基础词库
+  - cn_dicts/sogou   # 搜狗流行词，与 main 没有重复
+  - cn_dicts/ext     # 扩展词库，与 main sogou 没有重复
+  - cn_dicts/tencent # 腾讯词向量，与 main sogou ext 没有重复，大词库，部署时间较长。
+  - cn_dicts/others  # 一些杂项
+  - en_dicts/en_ext          # 自己补充的词库
+  - en_dicts/en_most_common  # 最常见 8000 多个单词
+  - en_dicts/en              # melt_eng 方案原装词库
+  - en_dicts/cn_en           # 中英混输词库
