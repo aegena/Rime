@@ -1,10 +1,10 @@
 patch:
   show_notifications_when: appropriate     # 状态通知，可设为全开（always）全关（never）  
 
-  style/horizontal: true               # true横排，false竖排
+  style/horizontal: false               # true横排，false竖排
   style/inline_preedit: true           # 內嵌編碼（僅支持TSF）
   style/display_tray_icon: true        # 顯示托盤圖標
-  style/font_face: 'Segoe UI, NanumGothicCoding, STFangsong, SF Pro, SF Compact, SF Mono, HanaMinA, HanaMinB'
+  style/font_face: 'NanumGothicCoding, STFangsong, HanaMinA, HanaMinB'
   style/font_point: 16                 # 候选文字大小
   style/label_font_point: 14           # 候选编号大小
   style/candidate_format: "%c. %@ "      # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间 
@@ -24,7 +24,7 @@ patch:
   # 深色主题
   # style/color_scheme_dark: purity
   # 浅色主题
-  style/color_scheme: google
+  style/color_scheme: mac_dark
 
 
 
