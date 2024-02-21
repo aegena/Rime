@@ -1,30 +1,30 @@
 patch:
   show_notifications_when: appropriate     # 状态通知，可设为全开（always）全关（never）  
 
-  style/horizontal: false               # true横排，false竖排
+  style/horizontal: true               # true横排，false竖排
   style/inline_preedit: true           # 內嵌編碼（僅支持TSF）
   style/display_tray_icon: true        # 顯示托盤圖標
   style/font_face: 'NanumGothicCoding, STFangsong, HanaMinA, HanaMinB'
-  style/font_point: 16                 # 候选文字大小
+  style/font_point: 15                 # 候选文字大小
   style/label_font_point: 14           # 候选编号大小
   style/candidate_format: "%c. %@ "      # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间 
   style/corner_radius: 0            # 候选条圆角
-  style/border_width: 4             # 窗口左右宽度
+  style/border_width: 6             # 窗口左右宽度
   style/border_height: 6            # 窗口左右高度
   style/margin_x: 14                # 字起始距左边距离
   style/margin_y: 14                # 字上下边距
-  style/spacing: 14                 # 间距
-  style/candidate_spacing: 24      # 候选字间隔
-  style/hilite_spacing: 10           # 序号和候选字之间的间隔
-  style/hilite_padding: 12          # 候选字背景色色块高度 若想候选字背景色块无边界填充候选框，仅需其高度和候选字上下边距一致即可
-  style/round_corner: 0             # 候选字背景色块圆角幅度
-  style/line_spacing: 10            # 行间距(适用于竖排)
+  style/spacing: 12                 # 间距
+  style/candidate_spacing: 20      # 候选字间隔
+  style/hilite_spacing: 8           # 序号和候选字之间的间隔
+  style/hilite_padding: 8          # 候选字背景色色块高度 若想候选字背景色块无边界填充候选框，仅需其高度和候选字上下边距一致即可
+  style/round_corner: 2             # 候选字背景色块圆角幅度
+  style/line_spacing: 8            # 行间距(适用于竖排)
   style/hilited_corner_radius: 4                 # 高亮圆角
   # 皮肤主题名称输入在下方，分为浅色和深色
   # 深色主题
   # style/color_scheme_dark: purity
   # 浅色主题
-  style/color_scheme: mac_dark
+  style/color_scheme: win10
 
 
 
@@ -181,27 +181,32 @@ patch:
       comment_text_color: 0x808080             # 拼音等提示文字颜色
 
   # 特定App默认中/英文输入
-  # app_options:
-  #   com.apple.Spotlight: # 聚焦搜索
-  #     ascii_mode: true             # true默认英文,false默认中文
-  #   com.runningwithcrayons.Alfred: # alfred
-  #     ascii_mode: true
-  #   com.apple.Terminal: # 终端
-  #     ascii_mode: true
-  #   com.microsoft.VSCode: # Visual Studio Code
-  #     ascii_mode: true
-  #     ascii_punct: true            # 中文状态输出英文标点(半角)
-  #   com.tencent.Lemon: # 腾讯柠檬
-  #     ascii_mode: true
-  #   com.apple.dt.Xcode: # Xcode
-  #     ascii_mode: true
-  #   com.nektony.App-Cleaner-SII: # App Cleaner & Uninstaller
-  #     ascii_mode: true
-  #   com.xunyong.hapigo: # hapigo
-  #     ascii_mode: true
-  #   com.termius-dmg.mac: # termius
-  #     ascii_mode: true
-  #   com.raycast.macos: # Raycast
-  #     ascii_mode: true
-  #   com.jetbrains.intellij: # idea
-  #     ascii_mode: true
+  app_options:
+    com.apple.Spotlight: # 聚焦搜索
+      ascii_mode: true             # true默认英文,false默认中文
+    com.runningwithcrayons.Alfred: # alfred
+      ascii_mode: true
+    com.apple.Terminal: # 终端
+      ascii_mode: true
+    com.microsoft.VSCode: # Visual Studio Code
+      ascii_mode: true
+      # ascii_punct: true            # 中文状态输出英文标点(半角)
+    com.tencent.Lemon: # 腾讯柠檬
+      ascii_mode: true
+    com.apple.dt.Xcode: # Xcode
+      ascii_mode: true
+    com.nektony.App-Cleaner-SII: # App Cleaner & Uninstaller
+      ascii_mode: true
+    com.xunyong.hapigo: # hapigo
+      ascii_mode: true
+    com.termius-dmg.mac: # termius
+      ascii_mode: true
+    com.raycast.macos: # Raycast
+      ascii_mode: true
+    com.jetbrains.intellij: # idea
+      ascii_mode: true
+    com.google.android.studio-EAP: # android studio pre
+      ascii_mode: true
+    com.google.android.studio: # android studio
+      ascii_mode: true
+    
