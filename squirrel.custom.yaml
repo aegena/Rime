@@ -24,7 +24,7 @@ patch:
   # 深色主题
   # style/color_scheme_dark: purity
   # 浅色主题
-  style/color_scheme: win10
+  style/color_scheme: mac_dark
 
 
 
