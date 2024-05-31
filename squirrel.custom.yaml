@@ -1,30 +1,27 @@
 patch:
   show_notifications_when: always # 状态通知，可设为全开（always）全关（never）
-
-  style/horizontal: false # true横排，false竖排
-  style/inline_preedit: true # 內嵌編碼（僅支持TSF）
-  style/display_tray_icon: true # 顯示托盤圖標
-  style/font_face: "NanumGothicCoding, STFangsong, HanaMinA, HanaMinB"
-  style/font_point: 15 # 候选文字大小
-  style/label_font_point: 12 # 候选编号大小
-  style/candidate_format: "%c. %@ " # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
-  style/corner_radius: 2 # 候选条圆角
-  style/border_width: 4 # 窗口左右宽度
-  style/border_height: 4 # 窗口左右高度
-  style/margin_x: 8 # 字起始距左边距离
-  style/margin_y: 8 # 字上下边距
-  style/spacing: 10 # 间距
-  style/candidate_spacing: 8 # 候选字间隔
-  style/hilite_spacing: 4 # 序号和候选字之间的间隔
-  style/hilite_padding: 6 # 候选字背景色色块高度 若想候选字背景色块无边界填充候选框，仅需其高度和候选字上下边距一致即可
-  style/round_corner: 2 # 候选字背景色块圆角幅度
-  style/line_spacing: 6 # 行间距(适用于竖排)
-  style/hilited_corner_radius: 2 # 高亮圆角
-  # 皮肤主题名称输入在下方，分为浅色和深色
-  # 深色主题
-  # style/color_scheme_dark: purity
-  # 浅色主题
-  style/color_scheme: mac_dark
+  style:
+    horizontal: false # true横排，false竖排
+    inline_preedit: true # 內嵌編碼（僅支持TSF）
+    display_tray_icon: true # 顯示托盤圖標
+    font_face: "NanumGothicCoding, STFangsong, HanaMinA, HanaMinB"
+    font_point: 15 # 候选文字大小
+    label_font_point: 14 # 候选编号大小
+    candidate_format: "%c. %@ " # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+    corner_radius: 2 # 候选条圆角
+    border_width: 2 # 窗口左右宽度
+    border_height: 2 # 窗口左右高度
+    margin_x: 8 # 字起始距左边距离
+    margin_y: 8 # 字上下边距
+    spacing: 10 # 间距
+    candidate_spacing: 8 # 候选字间隔
+    hilite_spacing: 4 # 序号和候选字之间的间隔
+    hilite_padding: 6 # 候选字背景色色块高度 若想候选字背景色块无边界填充候选框，仅需其高度和候选字上下边距一致即可
+    round_corner: 2 # 候选字背景色块圆角幅度
+    line_spacing: 10 # 行间距(适用于竖排)
+    hilited_corner_radius: 2 # 高亮圆角
+    color_scheme_dark: mac_dark # 深色主题, # 皮肤主题名称输入在下方，分为浅色和深色
+    color_scheme: mac_light # 浅色主题, # 皮肤主题名称输入在下方，分为浅色和深色
 
   # 皮肤主题
   preset_color_schemes:
