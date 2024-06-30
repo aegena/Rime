@@ -1,26 +1,27 @@
 patch:
   show_notifications_when: always # 状态通知，可设为全开（always）全关（never）
   style:
-    horizontal: false # true横排，false竖排
+    candidate_list_layout: linear #stacked(堆叠)/linear(线性)   候选列表布局
+    text_orientation: horizontal #horizontal/vertical
     inline_preedit: true # 內嵌編碼（僅支持TSF）
     display_tray_icon: true # 顯示托盤圖標
-    font_face: "NanumGothicCoding, STFangsong, HanaMinA, HanaMinB"
-    font_point: 15 # 候选文字大小
+    font_face: "微软雅黑, Monaco, NanumGothicCoding, STFangsong, HanaMinA, HanaMinB"
+    font_point: 16 # 候选文字大小
     label_font_point: 14 # 候选编号大小
     candidate_format: "%c. %@ " # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
-    corner_radius: 2 # 候选条圆角
+    corner_radius: 0 # 候选条圆角
     border_width: 2 # 窗口左右宽度
-    border_height: 2 # 窗口左右高度
+    border_height: 4 # 窗口左右高度
     margin_x: 8 # 字起始距左边距离
     margin_y: 8 # 字上下边距
     spacing: 10 # 间距
-    candidate_spacing: 8 # 候选字间隔
-    hilite_spacing: 4 # 序号和候选字之间的间隔
+    candidate_spacing: 6 # 候选字间隔
+    hilite_spacing: 6 # 序号和候选字之间的间隔
     hilite_padding: 6 # 候选字背景色色块高度 若想候选字背景色块无边界填充候选框，仅需其高度和候选字上下边距一致即可
-    round_corner: 2 # 候选字背景色块圆角幅度
+    round_corner: 1 # 候选字背景色块圆角幅度
     line_spacing: 10 # 行间距(适用于竖排)
-    hilited_corner_radius: 2 # 高亮圆角
-    color_scheme_dark: mac_dark # 深色主题, # 皮肤主题名称输入在下方，分为浅色和深色
+    hilited_corner_radius: 1 # 高亮圆角
+    color_scheme_dark: google # 深色主题, # 皮肤主题名称输入在下方，分为浅色和深色
     color_scheme: mac_light # 浅色主题, # 皮肤主题名称输入在下方，分为浅色和深色
 
   # 皮肤主题
@@ -43,7 +44,7 @@ patch:
       name: Mac深色
       text_color: 0x424242 # 拼音行文字颜色
       back_color: 0x252a2e # 候选条背景色
-      border_color: 0x050505 # 边框色
+      border_color: 0x252a2e # 边框色
       label_color: 0x999999 # 预选栏编号颜色
       candidate_text_color: 0xe9e9ea # 预选项文字颜色
       comment_text_color: 0x999999 # 拼音等提示文字颜色
