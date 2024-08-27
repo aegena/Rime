@@ -5,10 +5,15 @@ patch:
     text_orientation: horizontal #horizontal/vertical
     inline_preedit: true # 內嵌編碼（僅支持TSF）
     display_tray_icon: true # 顯示托盤圖標
-    font_face: "微软雅黑, Monaco, NanumGothicCoding, STFangsong, HanaMinA, HanaMinB"
+    font_face: "NanumGothicCoding, 微软雅黑, Monaco, STFangsong, HanaMinA, HanaMinB"
     font_point: 16 # 候选文字大小
     label_font_point: 14 # 候选编号大小
-    candidate_format: "%c. %@ " # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+    # candidate_format: "%c. %@ " # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+    candidate_format: "[label]. [candidate] [comment]"
+    #label_font_face: 'Avenir'
+    #label_font_point: 12
+    #comment_font_face: 'Avenir'
+    #comment_font_point: 16
     corner_radius: 0 # 候选条圆角
     border_width: 2 # 窗口左右宽度
     border_height: 4 # 窗口左右高度
@@ -21,8 +26,8 @@ patch:
     round_corner: 1 # 候选字背景色块圆角幅度
     line_spacing: 10 # 行间距(适用于竖排)
     hilited_corner_radius: 1 # 高亮圆角
-    color_scheme_dark: google # 深色主题, # 皮肤主题名称输入在下方，分为浅色和深色
-    color_scheme: mac_light # 浅色主题, # 皮肤主题名称输入在下方，分为浅色和深色
+    # color_scheme_dark: mac_dark # 深色主题, # 皮肤主题名称输入在下方，分为浅色和深色
+    color_scheme: mac_dark # 浅色主题, # 皮肤主题名称输入在下方，分为浅色和深色
 
   # 皮肤主题
   preset_color_schemes:
@@ -202,4 +207,8 @@ patch:
     com.google.android.studio-EAP: # android studio pre
       ascii_mode: true
     com.google.android.studio: # android studio
+      ascii_mode: true
+    org.p0deje.Maccy:
+      ascii_mode: true
+    com.torusknot.SourceTreeNotMAS:
       ascii_mode: true
