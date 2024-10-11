@@ -3,7 +3,7 @@ patch:
   switches:
     - name: ascii_mode
       reset: 0
-      states: [zh-CN, EN]
+      states: [CN, EN]
     - name: emoji_suggestion
       reset: 1
       states: ["No", "Yes"]

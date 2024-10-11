@@ -27,7 +27,7 @@ patch:
     line_spacing: 2 # 行间距(适用于竖排)
     hilited_corner_radius: 1 # 高亮圆角
     # color_scheme_dark: mac_dark # 深色主题, # 皮肤主题名称输入在下方，分为浅色和深色
-    color_scheme: mac_blue # 浅色主题, # 皮肤主题名称输入在下方，分为浅色和深色
+    color_scheme: psionics # 浅色主题, # 皮肤主题名称输入在下方，分为浅色和深色
 
   # 皮肤主题
   preset_color_schemes:
