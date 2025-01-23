@@ -6,13 +6,13 @@ patch:
     inline_preedit: true # 內嵌編碼（僅支持TSF）
     display_tray_icon: true # 顯示托盤圖標
     font_face: "NanumGothicCoding, STFangsong, HanaMinA, HanaMinB"
-    font_point: 18 # 候选文字大小
-    label_font_point: 16 # 候选编号大小
+    font_point: 16 # 候选文字大小
+    label_font_point: 14 # 候选编号大小
     # candidate_format: "%c. %@ " # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
     candidate_format: "[label]. [candidate] [comment]"
     corner_radius: 1 # 候选条圆角
-    border_width: 4 # 窗口左右宽度
-    border_height: 4 # 窗口左右高度
+    border_width: 1 # 窗口左右宽度
+    border_height: 1 # 窗口左右高度
     margin_x: 2 # 字起始距左边距离
     margin_y: 4 # 字上下边距
     spacing: 6 # 间距
@@ -23,7 +23,7 @@ patch:
     line_spacing: 6 # 行间距(适用于竖排)
     hilited_corner_radius: 1 # 高亮圆角
     # color_scheme_dark: mac_dark # 深色主题, # 皮肤主题名称输入在下方，分为浅色和深色
-    color_scheme: solarized_rock # 浅色主题, # 皮肤主题名称输入在下方，分为浅色和深色
+    color_scheme: win10 # 浅色主题, # 皮肤主题名称输入在下方，分为浅色和深色
 
   # 皮肤主题
   preset_color_schemes:
