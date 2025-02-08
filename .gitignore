@@ -1,7 +1,7 @@
-*~
-.*~
-*userdb/
-/build/*
-/user.yaml
-/installation.yaml
-.idea/
+build/
+installation.yaml
+user.yaml
+luna_pinyin.userdb/*
+easy_en.userdb/*
+rime_ice.userdb/*
+.DS_Store
