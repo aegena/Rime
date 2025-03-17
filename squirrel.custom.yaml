@@ -1,0 +1,197 @@
+patch:
+  show_notifications_when: always # 狀態通知，默認裝有Growl時顯示，也可設爲全開（always）全關（never）
+
+  style:
+    candidate_list_layout: linear #stacked(堆叠)/linear(线性)   候选列表布局
+    text_orientation: horizontal #horizontal/vertical
+    inline_preedit: true # 內嵌編碼（僅支持TSF）
+    display_tray_icon: true # 顯示托盤圖標
+    # Whether candidate panel stick to screen edge to reduce jumping
+    memorize_size: true
+    # Whether transparent colors stack on each other
+    mutual_exclusive: false
+    # Whether to use a translucent background. Only visible when background color is transparent
+    translucency: false
+    font_face: "NanumGothicCoding, Kaiti, 华文楷体, STFangsong, 微软雅黑, Monaco, HanaMinA, HanaMinB"
+    font_point: 16 # 候选文字大小
+    label_font_point: 14 # 候选编号大小
+    # candidate_format: "%c. %@ " # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+    candidate_format: "[label].[candidate][comment]" # 候选项格式
+    corner_radius: 0 # 候选条圆角
+    border_width: 8 # 窗口左右宽度
+    border_height: 2 # 窗口左右高度
+    margin_x: 12 # 字起始距左边距离
+    margin_y: 12 # 字上下边距
+    spacing: 4 # 间距
+    candidate_spacing: 2 # 候选字间隔
+    hilite_spacing: 1 # 序号和候选字之间的间隔
+    hilite_padding: 8 # 候选字背景色色块高度 若想候选字背景色块无边界填充候选框，仅需其高度和候选字上下边距一致即可
+    round_corner: 1 # 候选字背景色块圆角幅度
+    line_spacing: 8 # 行间距(适用于竖排)
+    hilited_corner_radius: 0 # 高亮圆角
+    shadow_offset_x: 5 # 阴影 X 轴偏移
+    shadow_offset_y: 5 # 阴影 Y 轴偏移
+    shadow_radius: 10 # 阴影半径
+    # color_scheme_dark: Micosoft # 深色主题, # 皮肤主题名称输入在下方，分为浅色和深色
+    color_scheme: mac_dark # 浅色主题, # 皮肤主题名称输入在下方，分为浅色和深色
+
+  # 皮肤主题
+  preset_color_schemes:
+    mac_light:
+      name: Mac浅色
+      text_color: 0x424242 # 拼音行文字颜色
+      back_color: 0xFFFFFF # 候选条背景色
+      border_color: 0xFFFFFF # 边框色
+      label_color: 0x999999 # 预选栏编号颜色
+      candidate_text_color: 0x3c3c3c # 预选项文字颜色
+      comment_text_color: 0x999999 # 拼音等提示文字颜色
+      hilited_text_color: 0x999999 # 高亮拼音 (需要开启内嵌编码)
+      hilited_back_color: 0xD75A00 # 第一候选项背景背景色
+      hilited_candidate_text_color: 0xFFFFFF # 第一候选项文字颜色
+      hilited_candidate_label_color: 0xFFFFFF # 第一候选项编号颜色
+      hilited_comment_text_color: 0x999999 # 注解文字高亮
+
+    mac_dark:
+      name: Mac深色
+      text_color: 0x424242 # 拼音行文字颜色
+      back_color: 0x252a2e # 候选条背景色
+      border_color: 0x252a2e # 边框色
+      label_color: 0x999999 # 预选栏编号颜色
+      candidate_text_color: 0xe9e9ea # 预选项文字颜色
+      comment_text_color: 0x999999 # 拼音等提示文字颜色
+      hilited_text_color: 0x999999 # 高亮拼音 (需要开启内嵌编码)
+      hilited_back_color: 0xD75A00 # 第一候选项背景背景色
+      hilited_candidate_text_color: 0xFFFFFF # 第一候选项文字颜色
+      hilited_candidate_label_color: 0xFFFFFF # 第一候选项编号颜色
+      hilited_comment_text_color: 0x999999 # 注解文字高亮
+
+    psionics:
+      name: 幽能
+      text_color: 0xc2c2c2 # 拼音行文字颜色
+      back_color: 0x444444 # 候选条背景色，24位色值，16进制，BGR顺序
+      candidate_text_color: 0xeeeeee # 预选项文字颜色
+      hilited_candidate_back_color: 0xd4bc00 # 候选文字背景色
+      comment_text_color: 0x808080 # 拼音等提示文字颜色
+      hilited_text_color: 0xeeeeee # 高亮拼音 (需要开启内嵌编码)
+      hilited_back_color: 0x444444 # 第一候选项背景背景色
+      hilited_candidate_label_color: 0xfafafa # 第一候选项编号颜色
+      hilited_candidate_text_color: 0xfafafa # 第一候选项文字颜色
+      hilited_comment_text_color: 0x444444 # 注解文字高亮
+
+    solarized_dark:
+      name: 夜光石
+      text_color: 0xA1A095 # 拼音行文字颜色
+      border_color: 0xf02A1F00 # 边框颜色
+      label_color: 0xCC8947 # 预选栏编号颜色
+      back_color: 0xf0352A0A # 候选条背景色，24位色值，16进制，BGR顺序
+      candidate_text_color: 0x989F52 # 预选项文字颜色
+      comment_text_color: 0x289989 # 拼音等提示文字颜色
+      hilited_text_color: 0x2C8BAE # 高亮拼音 (需要开启内嵌编码)
+      hilited_back_color: 0x444444 # 第一候选项背景背景色
+      hilited_candidate_label_color: 0x2566C6 # 第一候选项编号颜色
+      hilited_candidate_back_color: 0xD7E8ED # 候选文字背景色
+      hilited_candidate_text_color: 0x3942CB # 第一候选项文字颜色
+      hilited_comment_text_color: 0x8144C2 # 注解文字高亮
+
+    apathy:
+      name: 冷漠
+      back_color: 0xFFFFFF # 候选条背景色，24位色值，16进制，BGR顺序
+      comment_text_color: 0x999999 # 拼音等提示文字颜色
+      hilited_candidate_back_color: 0xFFF0E4 # 候选文字背景色
+      hilited_candidate_text_color: 0xEE6E00 # 第一候选项文字颜色
+      text_color: 0x424242 # 拼音行文字颜色
+
+    google:
+      name: 谷歌
+      text_color: 0x666666 # 拼音行文字颜色
+      candidate_text_color: 0x000000 # 预选项文字颜色
+      back_color: 0xFFFFFF # 候选条背景色
+      border_color: 0xE2E2E2 # 边框
+      hilited_text_color: 0x000000 # 高亮拼音 (需要开启内嵌编码)
+      hilited_back_color: 0xFFFFFF # 第一候选项背景背景色
+      hilited_candidate_text_color: 0xffffff # 第一候选项文字颜色
+      hilited_candidate_back_color: 0xCE7539 # 候选文字背景色
+      comment_text_color: 0x6D6D6D # 拼音等提示文字颜色
+      hilited_comment_text_color: 0xEBC6B0 # 注解文字高亮
+      hilited_candidate_label_color: 0xfafafa # 第一候选项编号颜色
+
+    ink:
+      name: 墨池
+      text_color: 0x5a5a5a # 拼音等提示文字颜色
+      back_color: 0xeeffffff # 候选条背景色
+      candidate_text_color: 0x000000 # 第一候选项文字颜色
+      hilited_text_color: 0x000000 # 高亮拼音 (需要开启内嵌编码)
+      hilited_candidate_text_color: 0xffffff # 第一候选项文字颜色
+      hilited_candidate_back_color: 0xcc000000 # 候选文字背景色
+      comment_text_color: 0x5a5a5a # 拼音等提示文字颜色
+      hilited_comment_text_color: 0x808080 # 注解文字高亮
+
+    purity:
+      name: 纯洁
+      text_color: 0xc2c2c2 # 拼音等提示文字颜色
+      back_color: 0x444444 # 候选条背景色
+      candidate_text_color: 0xeeeeee # 第一候选项文字颜色
+      hilited_text_color: 0xeeeeee # 高亮拼音 (需要开启内嵌编码)
+      hilited_back_color: 0x444444 # 第一候选项背景背景色
+      hilited_candidate_text_color: 0x000000 # 第一候选项文字颜色
+      hilited_candidate_back_color: 0xfafafa # 候选文字背景色
+      comment_text_color: 0x808080 # 拼音等提示文字颜色
+    
+
+    luna:
+      name: 明月／Luna
+      author: 佛振 <chen.sst@gmail.com>
+      text_color: 0xa5a5a5
+      back_color: 0xdd000000
+      candidate_text_color: 0xeceeee
+      hilited_text_color: 0x7fffff
+      hilited_candidate_text_color: 0x7fffff
+      hilited_candidate_back_color: 0x40000000
+      comment_text_color: 0xa5a5a5
+      hilited_comment_text_color: 0x449c9d
+
+    Micosoft:
+      name: "Micosoft" # 配色名称
+      author: "XNOM" # 作者名称
+      text_color: 0xD77800 # 内选区文字色
+      hilited_text_color: 0x000000 # 内选区编码色
+      hilited_back_color: 0xFFFFFF # 内选区背景色
+      hilited_candidate_text_color: 0xFFFFFF # 激活候选项文字色
+      hilited_candidate_back_color: 0xD77800 # 激活候选项背景色
+      candidate_text_color: 0x000000 # 其他候选项文字颜色
+      comment_text_color: 0x000000 # 其他候选项提示色
+     
+
+  # 特定App默认中/英文输入
+  app_options:
+    com.apple.Spotlight: # 聚焦搜索
+      ascii_mode: true # true默认英文,false默认中文
+    com.runningwithcrayons.Alfred: # alfred
+      ascii_mode: true
+    com.apple.Terminal: # 终端
+      ascii_mode: true
+    com.microsoft.VSCode: # Visual Studio Code
+      ascii_mode: true
+      # ascii_punct: true            # 中文状态输出英文标点(半角)
+    com.tencent.Lemon: # 腾讯柠檬
+      ascii_mode: true
+    com.apple.dt.Xcode: # Xcode
+      ascii_mode: true
+    com.nektony.App-Cleaner-SII: # App Cleaner & Uninstaller
+      ascii_mode: true
+    com.xunyong.hapigo: # hapigo
+      ascii_mode: true
+    com.termius-dmg.mac: # termius
+      ascii_mode: true
+    com.raycast.macos: # Raycast
+      ascii_mode: true
+    com.jetbrains.intellij: # idea
+      ascii_mode: true
+    com.google.android.studio-EAP: # android studio pre
+      ascii_mode: true
+    com.google.android.studio: # android studio
+      ascii_mode: true
+    org.p0deje.Maccy:
+      ascii_mode: true
+    com.torusknot.SourceTreeNotMAS:
+      ascii_mode: true
