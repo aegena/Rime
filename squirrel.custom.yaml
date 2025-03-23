@@ -2,7 +2,7 @@ patch:
   show_notifications_when: always # 狀態通知，默認裝有Growl時顯示，也可設爲全開（always）全關（never）
 
   style:
-    candidate_list_layout: stacked #stacked(堆叠)/linear(线性)   候选列表布局
+    candidate_list_layout: linear #stacked(堆叠)/linear(线性)   候选列表布局
     text_orientation: horizontal #horizontal/vertical
     inline_preedit: true # 內嵌編碼（僅支持TSF）
     display_tray_icon: true # 顯示托盤圖標
@@ -14,23 +14,26 @@ patch:
     translucency: false
     font_face: "NanumGothicCoding, Kaiti, 华文楷体, STFangsong, 微软雅黑, Monaco, HanaMinA, HanaMinB"
     font_point: 17 # 候选文字大小
-    label_font_point: 14 # 候选编号大小
+    label_font_point: 16 # 候选编号大小
     # candidate_format: "%c. %@ " # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
     candidate_format: "[label].[candidate][comment]" # 候选项格式
     corner_radius: 0 # 候选条圆角
-    border_width: 6 # 窗口左右宽度
-    border_height: 6 # 窗口左右高度
-    margin_x: 2 # 字起始距左边距离
-    margin_y: 2 # 字上下边距
+    border_width: 2 # 窗口左右宽度
+    border_height: 2 # 窗口左右高度
+    margin_x: 12 # 字起始距左边距离
+    margin_y: 12 # 字上下边距
     spacing: 4 # 间距
     candidate_spacing: 2 # 候选字间隔
     hilite_spacing: 1 # 序号和候选字之间的间隔
     hilite_padding: 8 # 候选字背景色色块高度 若想候选字背景色块无边界填充候选框，仅需其高度和候选字上下边距一致即可
-    round_corner: 0 # 候选字背景色块圆角幅度
+    round_corner: 1 # 候选字背景色块圆角幅度
     line_spacing: 8 # 行间距(适用于竖排)
     hilited_corner_radius: 0 # 高亮圆角
-    color_scheme_dark: mac_dark # 深色主题, # 皮肤主题名称输入在下方，分为浅色和深色
-    color_scheme: mac_light # 浅色主题, # 皮肤主题名称输入在下方，分为浅色和深色
+    shadow_offset_x: 5 # 阴影 X 轴偏移
+    shadow_offset_y: 5 # 阴影 Y 轴偏移
+    shadow_radius: 10 # 阴影半径
+    # color_scheme_dark: Micosoft # 深色主题, # 皮肤主题名称输入在下方，分为浅色和深色
+    color_scheme: Micosoft # 浅色主题, # 皮肤主题名称输入在下方，分为浅色和深色
 
   # 皮肤主题
   preset_color_schemes:
@@ -62,20 +65,6 @@ patch:
       hilited_candidate_label_color: 0xFFFFFF # 第一候选项编号颜色
       hilited_comment_text_color: 0x999999 # 注解文字高亮
 
-    mac_blue:
-      name: Mac浅蓝
-      text_color: 0x424242 # 拼音行文字颜色
-      back_color: 0xFFFFFF # 候选条背景色
-      border_color: 0xFFFFFF # 边框色
-      label_color: 0x999999 # 预选栏编号颜色
-      candidate_text_color: 0x3c3c3c # 预选项文字颜色
-      comment_text_color: 0x999999 # 拼音等提示文字颜色
-      hilited_text_color: 0x999999 # 高亮拼音 (需要开启内嵌编码)
-      hilited_back_color: 0xF8AA4D # 第一候选项背景背景色
-      hilited_candidate_text_color: 0xFFFFFF # 第一候选项文字颜色
-      hilited_candidate_label_color: 0xFFFFFF # 第一候选项编号颜色
-      hilited_comment_text_color: 0x999999 # 注解文字高亮
-
     psionics:
       name: 幽能
       text_color: 0xc2c2c2 # 拼音行文字颜色
@@ -88,32 +77,6 @@ patch:
       hilited_candidate_label_color: 0xfafafa # 第一候选项编号颜色
       hilited_candidate_text_color: 0xfafafa # 第一候选项文字颜色
       hilited_comment_text_color: 0x444444 # 注解文字高亮
-
-    win10:
-      candidate_text_color: 0x000000 # 预选项文字颜色
-      comment_text_color: 0x888888 # 拼音等提示文字颜色
-      text_color: 0x000000 # 拼音行文字颜色
-      back_color: 0xffffff # 候选条背景色，24位色值，16进制，BGR顺序
-      hilited_text_color: 0x000000 # 高亮拼音 (需要开启内嵌编码)
-      hilited_back_color: 0xffffff # 第一候选项背景背景色
-      hilited_candidate_text_color: 0xffffff # 第一候选项文字颜色
-      hilited_candidate_back_color: 0xcc8f29 # 候选文字背景色
-      hilited_comment_text_color: 0xffffff # 注解文字高亮
-      hilited_label_color: 0xffffff # 已选字的数字的颜色
-      label_color: 0x888888 # 预选栏编号颜色
-
-    solarized_rock:
-      name: 日光石
-      text_color: 0x8236d3 # 拼音行文字颜色
-      back_color: 0x362b00 # 候选条背景色，24位色值，16进制，BGR顺序
-      candidate_text_color: 0x969483 # 预选项文字颜色
-      comment_text_color: 0xc098a12a # 拼音等提示文字颜色
-      hilited_text_color: 0x98a12a # 高亮拼音 (需要开启内嵌编码)
-      hilited_back_color: 0x444444 # 第一候选项背景背景色
-      hilited_candidate_label_color: 0xfafafa # 第一候选项编号颜色
-      hilited_candidate_back_color: 0x8236d3 # 候选文字背景色
-      hilited_candidate_text_color: 0xffffff # 第一候选项文字颜色
-      hilited_comment_text_color: 0x362b00 # 注解文字高亮
 
     solarized_dark:
       name: 夜光石
@@ -152,14 +115,6 @@ patch:
       hilited_comment_text_color: 0xEBC6B0 # 注解文字高亮
       hilited_candidate_label_color: 0xfafafa # 第一候选项编号颜色
 
-    milan:
-      name: 米兰
-      back_color: 0xFFFFFF # 候选条背景色
-      comment_text_color: 0x999999 # 拼音等提示文字颜色
-      hilited_candidate_back_color: 0xF5803B # 候选文字背景色
-      hilited_candidate_text_color: 0xFFFFFF # 第一候选项文字颜色
-      text_color: 0x424242 # 拼音行文字颜色
-
     ink:
       name: 墨池
       text_color: 0x5a5a5a # 拼音等提示文字颜色
@@ -181,17 +136,7 @@ patch:
       hilited_candidate_text_color: 0x000000 # 第一候选项文字颜色
       hilited_candidate_back_color: 0xfafafa # 候选文字背景色
       comment_text_color: 0x808080 # 拼音等提示文字颜色
-   
-    azure:
-      name: 青天／Azure
-      author: 佛振 <chen.sst@gmail.com>
-      text_color: 0xcfa677
-      candidate_text_color: 0xffeacc
-      back_color: 0xee8b4e01
-      hilited_text_color: 0xffeacc
-      hilited_candidate_text_color: 0x7ffeff
-      hilited_candidate_back_color: 0x00000000
-      comment_text_color: 0xc69664
+    
 
     luna:
       name: 明月／Luna
@@ -204,29 +149,18 @@ patch:
       hilited_candidate_back_color: 0x40000000
       comment_text_color: 0xa5a5a5
       hilited_comment_text_color: 0x449c9d
-    lost_temple:
-      name: 孤寺／Lost Temple
-      author: 佛振 <chen.sst@gmail.com>, based on ir_black
-      text_color: 0xe8f3f6
-      back_color: 0xee303030
-      hilited_text_color: 0x82e6ca
-      hilited_candidate_text_color: 0x000000
-      hilited_candidate_back_color: 0x82e6ca
-      comment_text_color: 0xbb82e6ca
-      hilited_comment_text_color: 0xbb203d34
 
-    dark_temple:
-      name: 暗堂／Dark Temple
-      author: 佛振 <chen.sst@gmail.com>, based on ir_black
-      text_color: 0x92f6da
-      back_color: 0x222222
-      candidate_text_color: 0xd8e3e6
-      hilited_text_color: 0xffcf9a
-      hilited_back_color: 0x222222
-      hilited_candidate_text_color: 0x92f6da
-      hilited_candidate_back_color: 0x10000000  # 0x333333
-      comment_text_color: 0x606cff
-  
+    Micosoft:
+      name: "Micosoft" # 配色名称
+      author: "XNOM" # 作者名称
+      text_color: 0xD77800 # 内选区文字色
+      hilited_text_color: 0x000000 # 内选区编码色
+      hilited_back_color: 0xFFFFFF # 内选区背景色
+      hilited_candidate_text_color: 0xFFFFFF # 激活候选项文字色
+      hilited_candidate_back_color: 0xD77800 # 激活候选项背景色
+      candidate_text_color: 0x000000 # 其他候选项文字颜色
+      comment_text_color: 0x000000 # 其他候选项提示色
+     
 
   # 特定App默认中/英文输入
   app_options:
