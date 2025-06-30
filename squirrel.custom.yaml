@@ -12,14 +12,14 @@ patch:
     mutual_exclusive: false
     # Whether to use a translucent background. Only visible when background color is transparent
     translucency: false
-    font_face: "NanumGothicCoding, Kaiti, 华文楷体, STFangsong, 微软雅黑, Monaco, HanaMinA, HanaMinB"
+    font_face: "Sarasa, NanumGothicCoding, Kaiti, 华文楷体, STFangsong, 微软雅黑, Monaco, HanaMinA, HanaMinB"
     font_point: 16 # 候选文字大小
     label_font_point: 14 # 候选编号大小
     # candidate_format: "%c. %@ " # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
     candidate_format: "[label].[candidate][comment]" # 候选项格式
-    corner_radius: 0 # 候选条圆角
+    corner_radius: 4 # 候选条圆角
     border_width: 8 # 窗口左右宽度
-    border_height: 2 # 窗口左右高度
+    border_height: 6 # 窗口左右高度
     margin_x: 12 # 字起始距左边距离
     margin_y: 12 # 字上下边距
     spacing: 4 # 间距
