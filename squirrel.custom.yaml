@@ -19,13 +19,13 @@ patch:
     candidate_format: "[label].[candidate][comment]" # 候选项格式
     corner_radius: 4 # 候选条圆角
     border_width: 8 # 窗口左右宽度
-    border_height: 6 # 窗口左右高度
-    margin_x: 12 # 字起始距左边距离
-    margin_y: 12 # 字上下边距
+    border_height: 4 # 窗口左右高度
+    margin_x: 6 # 字起始距左边距离
+    margin_y: 4 # 字上下边距
     spacing: 4 # 间距
     candidate_spacing: 2 # 候选字间隔
     hilite_spacing: 1 # 序号和候选字之间的间隔
-    hilite_padding: 8 # 候选字背景色色块高度 若想候选字背景色块无边界填充候选框，仅需其高度和候选字上下边距一致即可
+    hilite_padding: 4 # 候选字背景色色块高度 若想候选字背景色块无边界填充候选框，仅需其高度和候选字上下边距一致即可
     round_corner: 1 # 候选字背景色块圆角幅度
     line_spacing: 8 # 行间距(适用于竖排)
     hilited_corner_radius: 0 # 高亮圆角
