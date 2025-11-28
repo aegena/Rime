@@ -2,7 +2,7 @@ patch:
   show_notifications_when: always # 狀態通知，默認裝有Growl時顯示，也可設爲全開（always）全關（never）
 
   style:
-    candidate_list_layout: linear #stacked(堆叠)/linear(线性)   候选列表布局
+    candidate_list_layout: stacked #stacked(堆叠)/linear(线性)   候选列表布局
     text_orientation: horizontal #horizontal/vertical
     inline_preedit: true # 內嵌編碼（僅支持TSF）
     display_tray_icon: true # 顯示托盤圖標
@@ -12,7 +12,7 @@ patch:
     mutual_exclusive: false
     # Whether to use a translucent background. Only visible when background color is transparent
     translucency: false
-    font_face: "Sarasa, NanumGothicCoding, Kaiti, 华文楷体, STFangsong, 微软雅黑, Monaco, HanaMinA, HanaMinB"
+    font_face: "NanumGothicCoding, Kaiti, 华文楷体, STFangsong, 微软雅黑, Monaco, HanaMinA, HanaMinB"
     font_point: 16 # 候选文字大小
     label_font_point: 14 # 候选编号大小
     # candidate_format: "%c. %@ " # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间

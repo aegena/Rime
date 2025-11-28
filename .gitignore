@@ -3,3 +3,6 @@ installation.yaml
 user.yaml
 *.userdb/*
 .DS_Store
+LICENSE
+README.md
+go.work
