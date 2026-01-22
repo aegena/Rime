@@ -1,39 +1,34 @@
 patch:
   show_notifications_when: always # 狀態通知，默認裝有Growl時顯示，也可設爲全開（always）全關（never）
-
-  style:
-    candidate_list_layout: linear #stacked(堆叠)/linear(线性)   候选列表布局
-    text_orientation: horizontal #horizontal/vertical
-    inline_preedit: true # 內嵌編碼（僅支持TSF）
-    display_tray_icon: true # 顯示托盤圖標
-    # Whether candidate panel stick to screen edge to reduce jumping
-    memorize_size: true
-    # Whether transparent colors stack on each other
-    mutual_exclusive: false
-    # Whether to use a translucent background. Only visible when background color is transparent
-    translucency: false
-    font_face: "NanumGothicCoding, Kaiti, 华文楷体, STFangsong, 微软雅黑, Monaco, HanaMinA, HanaMinB"
-    font_point: 16 # 候选文字大小
-    label_font_point: 14 # 候选编号大小
-    # candidate_format: "%c. %@ " # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
-    candidate_format: "[label].[candidate][comment]" # 候选项格式
-    corner_radius: 2 # 候选条圆角
-    border_width: 2 # 窗口左右宽度
-    border_height: 4 # 窗口上下高度
-    margin_x: 6 # 字起始距左边距离
-    margin_y: 8 # 字上下边距
-    spacing: 4 # 间距
-    candidate_spacing: 2 # 候选字间隔
-    hilite_spacing: 1 # 序号和候选字之间的间隔
-    hilite_padding: 6 # 候选字背景色色块高度 若想候选字背景色块无边界填充候选框，仅需其高度和候选字上下边距一致即可
-    round_corner: 1 # 候选字背景色块圆角幅度
-    line_spacing: 8 # 行间距(适用于竖排)
-    hilited_corner_radius: 0 # 高亮圆角
-    shadow_offset_x: 2 # 阴影 X 轴偏移
-    shadow_offset_y: 2 # 阴影 Y 轴偏移
-    shadow_radius: 5 # 阴影半径
-    # color_scheme_dark: Micosoft # 深色主题, # 皮肤主题名称输入在下方，分为浅色和深色
-    color_scheme: google # 浅色主题, # 皮肤主题名称输入在下方，分为浅色和深色
+  style/candidate_list_layout: linear #stacked(堆叠)/linear(线性)   候选列表布局
+  style/text_orientation: horizontal #horizontal/vertical
+  style/inline_preedit: true # 內嵌編碼（僅支持TSF）
+  style/display_tray_icon: true # 顯示托盤圖標
+  style/memorize_size: true # Whether candidate panel stick to screen edge to reduce jumping
+  style/mutual_exclusive: false # Whether transparent colors stack on each other
+  style/translucency: false  # Whether to use a translucent background. Only visible when background color is transparent
+  style/font_face: "NanumGothicCoding, Kaiti, 华文楷体, STFangsong, 微软雅黑, Monaco, HanaMinA, HanaMinB"
+  style/font_point: 16 # 候选文字大小
+  style/label_font_point: 14 # 候选编号大小
+  style/# candidate_format: "%c. %@ " # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+  style/candidate_format: "[label].[candidate][comment]" # 候选项格式
+  style/corner_radius: 2 # 候选条圆角
+  style/border_width: 2 # 窗口左右宽度
+  style/border_height: 4 # 窗口上下高度
+  style/margin_x: 6 # 字起始距左边距离
+  style/margin_y: 8 # 字上下边距
+  style/spacing: 4 # 间距
+  style/candidate_spacing: 2 # 候选字间隔
+  style/hilite_spacing: 1 # 序号和候选字之间的间隔
+  style/hilite_padding: 6 # 候选字背景色色块高度 若想候选字背景色块无边界填充候选框，仅需其高度和候选字上下边距一致即可
+  style/round_corner: 1 # 候选字背景色块圆角幅度
+  style/line_spacing: 8 # 行间距(适用于竖排)
+  style/hilited_corner_radius: 0 # 高亮圆角
+  style/shadow_offset_x: 2 # 阴影 X 轴偏移
+  style/shadow_offset_y: 2 # 阴影 Y 轴偏移
+  style/shadow_radius: 5 # 阴影半径
+  style/color_scheme_dark: mac_dark # 深色主题, # 皮肤主题名称输入在下方，分为浅色和深色
+  style/color_scheme: mac_light # 浅色主题, # 皮肤主题名称输入在下方，分为浅色和深色
 
   # 皮肤主题
   preset_color_schemes:
@@ -145,38 +140,21 @@ patch:
       hilited_candidate_back_color: 0xD77800 # 激活候选项背景色
       candidate_text_color: 0x000000 # 其他候选项文字颜色
       comment_text_color: 0x000000 # 其他候选项提示色
-     
 
-  # 特定App默认中/英文输入
-  app_options:
-    com.apple.Spotlight: # 聚焦搜索
-      ascii_mode: true # true默认英文,false默认中文
-    com.runningwithcrayons.Alfred: # alfred
-      ascii_mode: true
-    com.apple.Terminal: # 终端
-      ascii_mode: true
-    com.microsoft.VSCode: # Visual Studio Code
-      ascii_mode: true
-      # ascii_punct: true            # 中文状态输出英文标点(半角)
-    com.tencent.Lemon: # 腾讯柠檬
-      ascii_mode: true
-    com.apple.dt.Xcode: # Xcode
-      ascii_mode: true
-    com.nektony.App-Cleaner-SII: # App Cleaner & Uninstaller
-      ascii_mode: true
-    com.xunyong.hapigo: # hapigo
-      ascii_mode: true
-    com.termius-dmg.mac: # termius
-      ascii_mode: true
-    com.raycast.macos: # Raycast
-      ascii_mode: true
-    com.jetbrains.intellij: # idea
-      ascii_mode: true
-    com.google.android.studio-EAP: # android studio pre
-      ascii_mode: true
-    com.google.android.studio: # android studio
-      ascii_mode: true
-    org.p0deje.Maccy:
-      ascii_mode: true
-    com.torusknot.SourceTreeNotMAS:
-      ascii_mode: true
+  # 应用程序选项
+  app_options/com.apple.Spotlight/ascii_mode: true # 聚焦搜索
+  app_options/com.runningwithcrayons.Alfred/ascii_mode: true # alfred
+  app_options/com.apple.Terminal/ascii_mode: true # 终端
+  app_options/com.microsoft.VSCode/ascii_mode: true # Visual Studio Code
+  #app_options/com.microsoft.VSCode/ascii_punct: true            # 中文状态输出英文标点(半角)
+  app_options/com.tencent.Lemon/ascii_mode: true # 腾讯柠檬
+  app_options/com.apple.dt.Xcode/ascii_mode: true # Xcode
+  app_options/com.nektony.App-Cleaner-SII/ascii_mode: true # App Cleaner & Uninstaller
+  app_options/com.xunyong.hapigo/ascii_mode: true # hapigo
+  app_options/com.termius-dmg.mac/ascii_mode: true # termius
+  app_options/com.raycast.macos/ascii_mode: true # Raycast
+  app_options/com.jetbrains.intellij/ascii_mode: true # idea
+  app_options/com.google.android.studio-EAP/ascii_mode: true # android studio pre
+  app_options/com.google.android.studio/ascii_mode: true # android studio
+  app_options/org.p0deje.Maccy/ascii_mode: true # maccy
+  app_options/com.torusknot.SourceTreeNotMAS/ascii_mode: true   
