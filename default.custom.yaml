@@ -42,11 +42,11 @@ switcher:
 # inline_ascii 切换到临时英文模式，按回车上屏后回到中文状态
 # noop         屏蔽快捷键，不切换中英，但不要屏蔽 CapsLock
 ascii_composer:
-  good_old_caps_lock: true  # true | false
+  good_old_caps_lock: false  # true为系统默认的Caps Lock大小写，false为用Caps Lock切换中英文
   switch_key:
-    Caps_Lock: clear      # commit_code | commit_text | clear
-    Shift_L: commit_text  # commit_code | commit_text | inline_ascii | clear | noop
-    Shift_R: commit_text         # commit_code | commit_text | inline_ascii | clear | noop
+    Caps_Lock: commit_code      # commit_code | commit_text | clear macOS 习惯：用 Caps Lock 键切换
+    Shift_L: commit_code  # commit_code | commit_text | inline_ascii | clear | noop Windows 习惯：用 左Shift 键切换
+    Shift_R: noop         # commit_code | commit_text | inline_ascii | clear | noop 右Shift 键（noop表示无操作/禁用）
     Control_L: noop       # commit_code | commit_text | inline_ascii | clear | noop
     Control_R: noop       # commit_code | commit_text | inline_ascii | clear | noop
 
@@ -71,16 +71,11 @@ ascii_composer:
     #- { when: always, accept: Control+Shift+1, select: .next }             # 切换输入方案
     #- { when: always, accept: Control+Shift+2, toggle: ascii_mode }        # 中/英文切换
     #- { when: always, accept: Control+Shift+3, toggle: full_shape }        # 全角/半角切换
-    # - { when: always, accept: Control+Shift+4, toggle: simplification } # 繁简体切换
+    #- { when: always, accept: Control+Shift+4, toggle: simplification } # 繁简体切换
     #- { when: always, accept: Control+Shift+5, toggle: extended_charset }  # 通用/增广切换（显示生僻字）
     #- { when: composing, accept: Control+b, send: Left }           # "Control+b" 移动光标
     #- { when: composing, accept: Control+f, send: Right }          # "Control+f" 向右选择候选词
     #- { when: composing, accept: Control+h, send: BackSpace }      # "Control+h" 删除输入码
-
-
-
-
-
 
 
 ###################################################################################
