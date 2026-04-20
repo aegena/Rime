@@ -41,6 +41,11 @@ switcher:
 # clear        清除未上屏内容，然后切换到英文
 # inline_ascii 切换到临时英文模式，按回车上屏后回到中文状态
 # noop         屏蔽快捷键，不切换中英，但不要屏蔽 CapsLock
+
+# macOS 默认用 Caps Lock (中/英键) 切换输入法，优先级高于 Rime。
+# 解决： 系统设置 -> 键盘 -> 文本输入（输入法） -> 点击“编辑...” -> 关闭“使用中/英键切换‘美国’输入模式”。这样就可以让 Rime 自己接管 Caps Lock/Shift 键了。
+
+
 ascii_composer:
   good_old_caps_lock: false  # true为系统默认的Caps Lock大小写，false为用Caps Lock切换中英文
   switch_key:

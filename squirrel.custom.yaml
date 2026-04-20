@@ -26,7 +26,7 @@ patch:
   style/hilited_corner_radius: 0 # 高亮圆角
   style/shadow_offset_x: 2 # 阴影 X 轴偏移
   style/shadow_offset_y: 2 # 阴影 Y 轴偏移
-  style/shadow_radius: 5 # 阴影半径
+  style/shadow_radius: 4 # 阴影半径
   style/color_scheme_dark: mac_dark # 深色主题, # 皮肤主题名称输入在下方，分为浅色和深色
   style/color_scheme: mac_light # 浅色主题, # 皮肤主题名称输入在下方，分为浅色和深色
 
