@@ -11,7 +11,9 @@
 躄 bi
 鵖 bi
 猼 bo
+狛 bo
 礤 ca
+䜺 chai
 閦 chu
 膪 chuai
 鯙 chun
@@ -114,6 +116,7 @@
 鮨 yi
 煐 ying
 楢 you
+萮 yu
 魣 yu
 蚖 yuan
 䗃 zhan
@@ -161,6 +164,7 @@
 朊 ruan
 挼 ruo
 辻 shi
+糬 shu
 薙 ti
 畑 tian
 鿬 tian
@@ -324,7 +328,6 @@
 缏得红罗手帕子
 冫部
 菠薐菜
-狛千代
 峬峭
 重裀列鼎
 列鼎重裀
@@ -382,7 +385,6 @@
 张琍敏
 张书旂
 崔杋圭
-豆䜺儿
 多宝槅
 蛾眉螓首
 螓首蛾眉
