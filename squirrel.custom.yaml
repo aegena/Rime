@@ -13,9 +13,9 @@ patch:
   style/# candidate_format: "%c. %@ " # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
   style/candidate_format: "[label].[candidate][comment]" # 候选项格式
   style/corner_radius: 2 # 候选条圆角
-  style/border_width: 2 # 窗口左右宽度
+  style/border_width: 4 # 窗口左右宽度
   style/border_height: 4 # 窗口上下高度
-  style/margin_x: 6 # 字起始距左边距离
+  style/margin_x: 8 # 字起始距左边距离
   style/margin_y: 8 # 字上下边距
   style/spacing: 4 # 间距
   style/candidate_spacing: 2 # 候选字间隔
@@ -23,12 +23,12 @@ patch:
   style/hilite_padding: 6 # 候选字背景色色块高度 若想候选字背景色块无边界填充候选框，仅需其高度和候选字上下边距一致即可
   style/round_corner: 1 # 候选字背景色块圆角幅度
   style/line_spacing: 8 # 行间距(适用于竖排)
-  style/hilited_corner_radius: 0 # 高亮圆角
+  style/hilited_corner_radius: 2 # 高亮圆角
   style/shadow_offset_x: 2 # 阴影 X 轴偏移
   style/shadow_offset_y: 2 # 阴影 Y 轴偏移
   style/shadow_radius: 4 # 阴影半径
-  style/color_scheme_dark: Micosoft # 深色主题, # 皮肤主题名称输入在下方，分为浅色和深色
-  style/color_scheme: Micosoft # 浅色主题, # 皮肤主题名称输入在下方，分为浅色和深色
+  style/color_scheme_dark: native # 深色主题, # 皮肤主题名称输入在下方，分为浅色和深色
+  style/color_scheme: native # 浅色主题, # 皮肤主题名称输入在下方，分为浅色和深色
 
   # 皮肤主题
   preset_color_schemes:
